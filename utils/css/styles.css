@@ -1,0 +1,80 @@
+header {
+
+    background-color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold
+}
+
+/*
+body {
+    background-image: url("/utils/img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100vh;
+}
+*/
+
+.titulo {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.bg-primario {
+    background-color: blue;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.productos .titulo {
+    width: 100%;
+}
+
+.tarjeta {
+    width: 260px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;   /* apila los elementos de adentro verticalmente */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;  /* tu fuente externa */
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.tarjeta-precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+footer {
+    background-color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold
+}
