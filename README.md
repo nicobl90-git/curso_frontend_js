@@ -14,3 +14,7 @@ CLASE 4: Intro a CSS
 CLASE 5: Expandiendo CSS
 
 CLASE 6: Modelo de caja y flexbox
+
+CLASE 7: Grid y Media Queries
+
+CLASE 8: Git y Github

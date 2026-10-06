@@ -1,0 +1,49 @@
+grid-template-columns:
+
+.grid-container {
+   grid-template-columns: 1fr 2fr; /* Primera columna más pequeña, segunda más grande */
+}
+
+--------------------------------
+
+grid-template-rows:
+
+.grid-container {
+   grid-template-rows: auto 1fr; /* Primera fila automática, segunda ocupa el resto */
+}
+
+--------------------------------
+
+grid-column / grid-row:
+
+.header {
+   grid-column: 1 / 3; /* Ocupa desde la columna 1 hasta la 3 */
+}
+
+--------------------------------
+
+gap:
+
+.grid-container {
+   gap: 10px; /* Espacio uniforme entre filas y columnas */
+} 
+
+--------------------------------
+
+grid-area y grid-template-areas:
+
+.grid-container {
+ display: grid;
+ grid-template-areas:
+  "header header"
+  "sidebar main";
+}
+.header {
+ grid-area: header;
+}
+.sidebar {
+ grid-area: sidebar;
+}
+.main {
+ grid-area: main;
+}

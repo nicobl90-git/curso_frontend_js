@@ -6,16 +6,6 @@ header {
     font-weight: bold
 }
 
-/*
-body {
-    background-image: url("/utils/img/fondo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: cover;
-    height: 100vh;
-}
-*/
-
 body {
    font-family: "Raleway", sans-serif;
 }
@@ -38,8 +28,29 @@ p {
 }
 
 .bg-primario {
-    background-color: blue;
+    background-color: gray;
 }
+
+.media-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.form-and-table {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas de igual tamaño */
+    gap: 20px; /* Espacio entre las filas */
+    justify-items: center;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos del formulario */
+    width: 300px; /* Ancho del formulario */
+}
+
 
 footer {
 
@@ -51,4 +62,37 @@ footer {
 
 footer i {
   font-size: 30px;
+}
+
+
+
+
+/* ========================================= */
+/* MEDIA QUERIES                              */
+/* ========================================= */
+
+/* Pantallas chicas: hasta 600px (celulares) */
+@media only screen and (max-width: 600px) {
+    .media-section {
+        grid-template-columns: 1fr; /* 1 sola columna */
+    }
+
+    .input-form {
+        width: 90%; /* en vez de 300px fijo, ocupa el 90% de lo disponible */
+    }
+
+    .titulo {
+        font-size: 1.3rem; /* títulos un poco más chicos */
+    }
+}
+
+/* Pantallas medianas: de 601px a 900px (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .media-section {
+        grid-template-columns: 1fr 1fr; /* se mantienen las 2 columnas */
+    }
+
+    .input-form {
+        width: 280px;
+    }
 }
